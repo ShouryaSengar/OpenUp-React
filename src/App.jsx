@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLandmark } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const App = () => {
   const [issueText, setIssueText] = useState('');
@@ -47,7 +48,7 @@ const App = () => {
             <li><a href="#contact">Contact</a></li>
           </ul>
           <div className="menu-btn">
-            <i className="fas fa-bars"></i>
+            <FontAwesomeIcon icon={faBars} size="lg" style={{ color: "#40403f" }} />
           </div>
         </div>
       </nav>
